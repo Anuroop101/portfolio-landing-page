@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TheProblem from './components/TheProblem';
 import Journey from './components/Journey';
@@ -20,7 +19,6 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      <Navbar onOpenApplication={handleOpenApplication} />
       <Hero onOpenApplication={handleOpenApplication} />
       <TheProblem />
       <Journey />
