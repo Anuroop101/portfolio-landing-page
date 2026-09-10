@@ -200,6 +200,26 @@
   color: var(--text-primary);
 }
 
+.newTabButton {
+  background: none;
+  border: 1px solid rgba(244, 244, 240, 0.4);
+  color: var(--bg-primary);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-mono, 'Courier New', Courier, monospace);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.newTabButton:hover {
+  border-color: var(--bg-primary);
+  background-color: rgba(244, 244, 240, 0.15);
+}
+
 .demoIframe {
   flex-grow: 1;
   width: 100%;

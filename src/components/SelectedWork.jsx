@@ -9,9 +9,9 @@ export default function SelectedWork() {
       location: 'london',
       type: 'residential',
       year: '2026',
-      image: '/voss-preview.png',
+      image: `${import.meta.env.BASE_URL}voss-preview.png`,
       desc: 'Full-service interior design for a Victorian townhouse renovation.',
-      link: '/projects/demo1/index.html'
+      link: `${import.meta.env.BASE_URL}projects/demo1/index.html`
     }
   ];
 
@@ -34,6 +34,7 @@ export default function SelectedWork() {
           {projects.map((project, index) => (
             <article 
               key={project.id} 
+              id="project"
               className={`${styles.project} ${index % 2 === 0 ? styles.projectOffset : ''}`}
             >
               <div 
@@ -78,12 +79,22 @@ export default function SelectedWork() {
           <div className={styles.demoModal}>
             <div className={styles.modalHeader}>
               <span className={styles.modalTitle}>Live Preview: Voss Studio</span>
-              <button 
-                className={styles.closeButton}
-                onClick={() => setActiveDemo(null)}
-              >
-                Close Preview &times;
-              </button>
+              <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                <a 
+                  href={activeDemo} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.newTabButton}
+                >
+                  Open in new tab &nearr;
+                </a>
+                <button 
+                  className={styles.closeButton}
+                  onClick={() => setActiveDemo(null)}
+                >
+                  Close Preview &times;
+                </button>
+              </div>
             </div>
             <iframe 
               src={activeDemo} 
