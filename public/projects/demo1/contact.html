@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Voss Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260806-premium-2">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="navigation" role="banner">
+    <nav class="nav__inner container" aria-label="Main navigation">
+      <div style="display: flex; align-items: center; gap: var(--space-xs);">
+        <a href="index.html" class="nav__logo">VOSS STUDIO</a>
+        <span class="eyebrow" style="margin-left: var(--space-xs); padding: 4px 8px; background: var(--bg-card); border-radius: var(--radius-pill);">London</span>
+      </div>
+      
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+      
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <section class="container section-padding">
+      <div class="bento-grid contact-layout" style="grid-template-columns: 1fr 1fr;">
+        <div class="card bento-text-card">
+          <p class="eyebrow" style="margin-bottom: var(--space-md);">● Contact</p>
+          <h1 class="heading" style="margin-bottom: var(--space-md);">Let's talk about your space.</h1>
+          <p style="color: var(--text-muted); margin-bottom: var(--space-xl);">
+            Discovery calls are free and last 30 minutes. No hard sell. We'll talk about your space, your timeline, and whether we're a good fit.
+          </p>
+          
+          <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+            <a href="mailto:hello@vossstudio.com" class="btn btn--outline contact-method" style="justify-content: flex-start;">hello@vossstudio.com</a>
+            <a href="tel:+447700000000" class="btn btn--outline contact-method" style="justify-content: flex-start;">+44 7700 000000</a>
+            <a href="https://wa.me/447700000000" target="_blank" class="btn btn--outline contact-method" style="justify-content: flex-start;">WhatsApp Message</a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h2 style="font-size: 20px; margin-bottom: var(--space-lg);">Send an enquiry</h2>
+          <div id="contact-form">
+            <!-- Step 1: Project Type -->
+            <div class="form-step form-step--active" data-step="1">
+              <p class="caption" style="margin-bottom: var(--space-sm);">What kind of project are you planning?</p>
+              <div class="form-step__option" data-value="single" role="radio" tabindex="0" aria-checked="false">
+                Single room <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="form-step__option" data-value="full" role="radio" tabindex="0" aria-checked="false">
+                Full home <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </div>
+            
+            <!-- Step 2: Timeline -->
+            <div class="form-step" data-step="2">
+              <p class="caption" style="margin-bottom: var(--space-sm);">When are you looking to start?</p>
+              <div class="form-step__option" data-value="asap" role="radio" tabindex="0" aria-checked="false">
+                As soon as possible <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="form-step__option" data-value="3-6m" role="radio" tabindex="0" aria-checked="false">
+                In 3–6 months <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="form-step__option" data-value="planning" role="radio" tabindex="0" aria-checked="false">
+                Just planning ahead <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </div>
+
+            <!-- Step 3: Budget -->
+            <div class="form-step" data-step="3">
+              <p class="caption" style="margin-bottom: var(--space-sm);">What is your estimated budget?</p>
+              <div class="form-step__option" data-value="20-50" role="radio" tabindex="0" aria-checked="false">
+                £20,000 – £50,000 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="form-step__option" data-value="50-100" role="radio" tabindex="0" aria-checked="false">
+                £50,000 – £100,000 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="form-step__option" data-value="100+" role="radio" tabindex="0" aria-checked="false">
+                £100,000+ <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </div>
+
+            <!-- Step 4: Details -->
+            <div class="form-step" data-step="4">
+              <p class="caption" style="margin-bottom: var(--space-sm);">Where should we send the details?</p>
+              <input type="text" class="form-input" placeholder="Your name" required>
+              <input type="email" class="form-input" placeholder="Email address" required>
+              <textarea class="form-input" placeholder="Any additional context (optional)" rows="2" style="resize: vertical;"></textarea>
+            </div>
+
+            <!-- Navigation -->
+            <div class="form-steps__nav">
+              <button class="form-steps__back btn btn--ghost" style="visibility: hidden;">Back</button>
+              <div class="form-steps__dots">
+                <span class="form-steps__dot form-steps__dot--active"></span>
+                <span class="form-steps__dot"></span>
+                <span class="form-steps__dot"></span>
+                <span class="form-steps__dot"></span>
+              </div>
+              <button id="form-next" class="btn btn--primary">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container" role="contentinfo">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="nav__logo" style="display: block; margin-bottom: var(--space-sm);">VOSS STUDIO</a>
+        <p class="caption" style="max-width: 300px;">Residential interior design from concept to completion. London studio, international projects.</p>
+      </div>
+      <div>
+        <h4 style="margin-bottom: var(--space-sm); font-size: 14px; text-transform: uppercase; color: var(--text-muted);">Navigation</h4>
+        <ul role="list" style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 14px;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin-bottom: var(--space-sm); font-size: 14px; text-transform: uppercase; color: var(--text-muted);">Contact</h4>
+        <ul role="list" style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 14px;">
+          <li><a href="mailto:hello@vossstudio.com">hello@vossstudio.com</a></li>
+          <li><a href="tel:+447700000000">+44 7700 000000</a></li>
+          <li><a href="#">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>&copy; 2026 Voss Studio. All rights reserved.</span>
+      <span>Designed with intention.</span>
+    </div>
+  </footer>
+
+  <a href="contact.html" class="sticky-cta">
+    Book a consultation
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
+</body>
+</html>

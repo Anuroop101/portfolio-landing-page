@@ -1,0 +1,68 @@
+.systemSection {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--bg-primary);
+}
+
+.labelWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: var(--spacing-xl);
+}
+
+.labelWrapper .fine-rule {
+  flex-grow: 1;
+}
+
+.capabilitiesList {
+  display: flex;
+  flex-direction: column;
+}
+
+.capabilityItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: var(--spacing-md) 0;
+  align-items: start;
+  gap: var(--spacing-md);
+  transition: background-color 0.3s ease;
+}
+
+.capabilityItem:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.capabilityHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.capId {
+  font-family: var(--font-mono, 'Courier New', Courier, monospace);
+  color: var(--accent-blue);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.capTitle {
+  font-family: var(--font-headline);
+  font-size: 2.5rem;
+  text-transform: lowercase; /* Matching reference */
+  color: var(--accent-blue); /* Matching reference */
+}
+
+.capDesc {
+  font-size: 1.25rem;
+  color: #4a4a4a;
+  padding-top: 0.5rem;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .capabilityItem {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: var(--spacing-sm) 0;
+  }
+}

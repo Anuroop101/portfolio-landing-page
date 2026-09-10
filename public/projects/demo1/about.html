@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Voss Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260806-premium-2">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="navigation" role="banner">
+    <nav class="nav__inner container" aria-label="Main navigation">
+      <div style="display: flex; align-items: center; gap: var(--space-xs);">
+        <a href="index.html" class="nav__logo">VOSS STUDIO</a>
+        <span class="eyebrow" style="margin-left: var(--space-xs); padding: 4px 8px; background: var(--bg-card); border-radius: var(--radius-pill);">London</span>
+      </div>
+      
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+      
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <!-- Hero / Intro -->
+    <section class="container section-padding">
+      <div class="bento-grid">
+        <div class="card bento-text-card about-bento-text">
+          <p class="eyebrow" style="margin-bottom: var(--space-md);">● About Elara Voss</p>
+          <h1 class="heading" style="margin-bottom: var(--space-md);">The spaces we live in shape how we feel.</h1>
+          <p style="color: var(--text-muted); font-size: 18px; margin-bottom: var(--space-md);">
+            After training in architecture at the Bartlett School and spending four years at a commercial practice, I realised that the spaces I cared most about weren't offices or retail. They were the homes people came back to every evening.
+          </p>
+          <p style="color: var(--text-muted); font-size: 16px;">
+            Voss Studio was founded in 2014 with one rule: every project starts with how the client actually lives. Not trends. Not what's in the magazines.
+          </p>
+        </div>
+        <div>
+          <picture>
+            <source srcset="assets/images/designer_portrait.png" type="image/png">
+            <img src="assets/images/designer_portrait.png" alt="Elara Voss" class="bento-img" loading="eager">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credentials -->
+    <section class="container section-padding">
+      <div class="card">
+        <p class="eyebrow" style="margin-bottom: var(--space-lg); text-align: center;">● Recognition</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-lg); text-align: center;">
+          <div>
+            <h4 style="font-size: 18px; margin-bottom: var(--space-xs);">BIID Member</h4>
+            <p class="caption">British Institute of Interior Design</p>
+          </div>
+          <div>
+            <h4 style="font-size: 18px; margin-bottom: var(--space-xs);">SBID Award 2023</h4>
+            <p class="caption">Residential Interior Under £1M</p>
+          </div>
+          <div>
+            <h4 style="font-size: 18px; margin-bottom: var(--space-xs);">Architectural Digest</h4>
+            <p class="caption">Featured designer, 2022 &amp; 2024</p>
+          </div>
+          <div>
+            <h4 style="font-size: 18px; margin-bottom: var(--space-xs);">Elle Decor</h4>
+            <p class="caption">Rising talent feature, 2021</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container" role="contentinfo">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="nav__logo" style="display: block; margin-bottom: var(--space-sm);">VOSS STUDIO</a>
+        <p class="caption" style="max-width: 300px;">Residential interior design from concept to completion. London studio, international projects.</p>
+      </div>
+      <div>
+        <h4 style="margin-bottom: var(--space-sm); font-size: 14px; text-transform: uppercase; color: var(--text-muted);">Navigation</h4>
+        <ul role="list" style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 14px;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin-bottom: var(--space-sm); font-size: 14px; text-transform: uppercase; color: var(--text-muted);">Contact</h4>
+        <ul role="list" style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 14px;">
+          <li><a href="mailto:hello@vossstudio.com">hello@vossstudio.com</a></li>
+          <li><a href="tel:+447700000000">+44 7700 000000</a></li>
+          <li><a href="#">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>&copy; 2026 Voss Studio. All rights reserved.</span>
+      <span>Designed with intention.</span>
+    </div>
+  </footer>
+
+  <a href="contact.html" class="sticky-cta">
+    Book a consultation
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

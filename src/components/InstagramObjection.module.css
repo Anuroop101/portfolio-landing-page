@@ -1,0 +1,74 @@
+.instagramSection {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.headline {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  text-transform: lowercase;
+  margin-top: 1rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--bg-primary);
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #a0a0a0;
+  max-width: 500px;
+}
+
+.visualContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: var(--spacing-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 300px;
+}
+
+.flowNode {
+  text-align: center;
+}
+
+.nodeTitle {
+  font-family: var(--font-headline);
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color: var(--bg-primary);
+  margin-bottom: 0.25rem;
+}
+
+.nodeSubtitle {
+  font-family: var(--font-mono, 'Courier New', Courier, monospace);
+  font-size: 0.875rem;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.flowArrow {
+  font-size: 2rem;
+  color: var(--accent-blue);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

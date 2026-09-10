@@ -1,0 +1,67 @@
+.journeySection {
+  padding: var(--spacing-lg) 0 var(--spacing-md);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.headline {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  text-transform: lowercase;
+  margin-top: 1rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stepNum {
+  font-family: var(--font-mono, 'Courier New', Courier, monospace);
+  font-size: 1.5rem;
+  color: var(--accent-blue);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stepTitle {
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.stepDesc {
+  font-size: 1.125rem;
+  color: #4a4a4a;
+  line-height: 1.4;
+}
+
+.connector {
+  font-size: 2rem;
+  color: var(--accent-blue);
+  margin-top: 1rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--accent-blue);
+  margin-bottom: var(--spacing-md);
+}
+

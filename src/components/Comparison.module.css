@@ -1,0 +1,166 @@
+.compSection {
+  padding: var(--spacing-xl) 0;
+  background-color: #f8f9fa; /* Slightly off-white for contrast with white cards */
+  color: var(--text-primary);
+  /* Optional: subtle dotted pattern like the image */
+  background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+  background-size: 20px 20px;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.headline {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  margin-top: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visuals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: var(--spacing-xl);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.cardWrapper {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06), 0 4px 15px rgba(0,0,0,0.03);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.statusBadge {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.badBadge {
+  background-color: #ef4444; /* Red */
+}
+
+.goodBadge {
+  background-color: #22c55e; /* Green */
+}
+
+.windowTitle {
+  font-family: var(--font-headline);
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #111;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.featureList li {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+  color: #333;
+}
+
+.badList {
+  color: #888;
+}
+
+.badList li {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.annotationsContainer {
+  position: absolute;
+  right: -250px;
+  bottom: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.annotation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.annotationText {
+  font-family: var(--font-handwriting);
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.annotation svg {
+  color: var(--text-primary);
+  opacity: 0.5;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer p:last-child {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .annotationsContainer {
+    display: none; /* Hide annotations on smaller screens to avoid horizontal scroll */
+  }
+}
+
+@media (max-width: 992px) {
+  .visuals {
+    flex-direction: column;
+    gap: 5rem; /* More gap for the badges */
+  }
+}
