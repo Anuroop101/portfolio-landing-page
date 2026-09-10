@@ -1,20 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
-  <!-- Architectural Dark Ground -->
-  <rect width="120" height="120" rx="24" fill="#1C1C1C"/>
-  
-  <!-- Subtle Blueprint Grid Accent -->
-  <circle cx="60" cy="60" r="48" stroke="#333333" stroke-width="1" stroke-dasharray="3 3"/>
-  <circle cx="60" cy="60" r="38" stroke="#2A2A2A" stroke-width="1"/>
-  
-  <!-- Monogram A (Architectural Gable / Compass) -->
-  <path d="M60 26 L36 88 H47 L53 71 H67 L73 88 H84 L60 26 Z" fill="none" stroke="#F4F4F0" stroke-width="4.5" stroke-linejoin="miter"/>
-  <!-- Crossbar of A -->
-  <path d="M51 64 H69" stroke="#F4F4F0" stroke-width="4" stroke-linecap="round"/>
-  
-  <!-- Monogram S (Intertwining Editorial S-Curve in Accent Blue / Off-White) -->
-  <path d="M72 40 C68 32, 54 32, 48 38 C42 44, 42 50, 52 54 C66 60, 72 65, 70 74 C67 84, 50 86, 44 80" 
-        fill="none" stroke="#4A72EC" stroke-width="4.5" stroke-linecap="round"/>
-  
-  <!-- Architectural Center Pinpoint -->
-  <circle cx="60" cy="26" r="2.5" fill="#4A72EC"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#18181B"/>
+  <!-- Architectural Gable / A -->
+  <path d="M32 10 L14 54 H23 L28 41 H36 L41 54 H50 L32 10 Z" fill="#F4F4F5"/>
+  <!-- Negative inner triangle -->
+  <polygon points="32,23 25,36 39,36" fill="#18181B"/>
+  <!-- Intertwined Studio 'S' curve in royal cobalt -->
+  <path d="M44 22 C40 14, 25 15, 23 25 C21 34, 43 32, 41 42 C39 51, 23 50, 18 43" 
+        stroke="#3B82F6" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <!-- Precision apex node -->
+  <circle cx="32" cy="11" r="2.5" fill="#3B82F6"/>
 </svg>
