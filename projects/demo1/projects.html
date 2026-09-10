@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Voss Studio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260806-premium-2">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="navigation" role="banner">
+    <nav class="nav__inner container" aria-label="Main navigation">
+      <div style="display: flex; align-items: center; gap: var(--space-xs);">
+        <a href="index.html" class="nav__logo">VOSS STUDIO</a>
+        <span class="eyebrow" style="margin-left: var(--space-xs); padding: 4px 8px; background: var(--bg-card); border-radius: var(--radius-pill);">London</span>
+      </div>
+      
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+      
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <section class="container section-padding projects-showcase">
+      <div style="text-align: center; margin-bottom: var(--space-2xl);">
+        <p class="eyebrow" style="margin-bottom: var(--space-xs);">● Selected Work</p>
+        <h1 class="display">Projects</h1>
+        
+        <!-- Filter Bar -->
+        <div style="display: flex; gap: var(--space-xs); justify-content: center; margin-top: var(--space-xl); flex-wrap: wrap;">
+          <button class="btn btn--primary filter-btn" data-filter="all">All</button>
+          <button class="btn btn--outline filter-btn" data-filter="living">Living</button>
+          <button class="btn btn--outline filter-btn" data-filter="kitchen">Kitchen</button>
+          <button class="btn btn--outline filter-btn" data-filter="bedroom">Bedroom</button>
+        </div>
+      </div>
+
+      <!-- Simple Grid for Portfolio -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr)); gap: var(--space-lg);" id="portfolio-grid">
+        
+        <article class="card project-card" data-category="living" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+          <a href="project.html">
+            <span class="project-card__number">01</span>
+            <img src="assets/images/hero_living_room.png" alt="Kensington Townhouse" style="width: 100%; height: 300px; object-fit: cover;">
+            <span class="project-card__view">View project <span aria-hidden="true">↗</span></span>
+            <div class="project-card__content" style="padding: var(--space-md);">
+              <h3 class="subheading" style="font-size: 20px;">Kensington Townhouse</h3>
+              <p class="caption">Living Room · London</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card project-card" data-category="kitchen" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+          <a href="project.html">
+            <span class="project-card__number">02</span>
+            <img src="assets/images/portfolio_kitchen.png" alt="Marylebone Kitchen" style="width: 100%; height: 300px; object-fit: cover;">
+            <span class="project-card__view">View project <span aria-hidden="true">↗</span></span>
+            <div class="project-card__content" style="padding: var(--space-md);">
+              <h3 class="subheading" style="font-size: 20px;">Marylebone Kitchen</h3>
+              <p class="caption">Kitchen · London</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card project-card" data-category="bedroom" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+          <a href="project.html">
+            <span class="project-card__number">03</span>
+            <img src="assets/images/portfolio_bedroom.png" alt="Cotswolds Retreat" style="width: 100%; height: 300px; object-fit: cover;">
+            <span class="project-card__view">View project <span aria-hidden="true">↗</span></span>
+            <div class="project-card__content" style="padding: var(--space-md);">
+              <h3 class="subheading" style="font-size: 20px;">Cotswolds Retreat</h3>
+              <p class="caption">Bedroom · Oxfordshire</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container" role="contentinfo">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="nav__logo" style="display: block; margin-bottom: var(--space-sm);">VOSS STUDIO</a>
+        <p class="caption" style="max-width: 300px;">Residential interior design from concept to completion. London studio, international projects.</p>
+      </div>
+      
+      <div>
+        <h4 style="margin-bottom: var(--space-sm); font-size: 14px; text-transform: uppercase; color: var(--text-muted);">Navigation</h4>
+        <ul role="list" style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 14px;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 style="margin-bottom: var(--space-sm); font-size: 14px; text-transform: uppercase; color: var(--text-muted);">Contact</h4>
+        <ul role="list" style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 14px;">
+          <li><a href="mailto:hello@vossstudio.com">hello@vossstudio.com</a></li>
+          <li><a href="tel:+447700000000">+44 7700 000000</a></li>
+          <li><a href="#">Instagram ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer__bar">
+      <span>&copy; 2026 Voss Studio. All rights reserved.</span>
+      <span>Designed with intention.</span>
+    </div>
+  </footer>
+
+  <a href="contact.html" class="sticky-cta">
+    Book a consultation
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Simple filter logic inline for projects.html
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('#portfolio-grid .card');
+    
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update buttons
+        filterBtns.forEach(b => {
+          b.classList.remove('btn--primary');
+          b.classList.add('btn--outline');
+        });
+        btn.classList.remove('btn--outline');
+        btn.classList.add('btn--primary');
+        
+        // Filter cards
+        const filter = btn.getAttribute('data-filter');
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
