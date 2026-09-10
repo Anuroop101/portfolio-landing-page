@@ -71,7 +71,7 @@ export default function WhatChanges() {
   ];
 
   return (
-    <section className={styles.changesSection}>
+    <section className={styles.changesSection} id="difference">
       <div className="container">
         
         <header className={styles.header}>

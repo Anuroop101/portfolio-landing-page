@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from './Logo';
 import styles from './FinalCTA.module.css';
 
 export default function FinalCTA({ onOpenApplication }) {
@@ -30,6 +31,20 @@ export default function FinalCTA({ onOpenApplication }) {
             </button>
             <p className={styles.smallNote}>Tell us a little about your studio. We'll take it from there.</p>
           </div>
+
+          <div className={styles.footerDivider}></div>
+
+          <div className={styles.footerBottom}>
+            <Logo size={36} variant="light" showSubtitle={false} />
+            <span className={styles.copyright}>
+              &copy; {new Date().getFullYear()} Studio Archis. Web Architecture for Interior Design.
+            </span>
+            <div className={styles.footerLinks}>
+              <a href="#work" className={styles.footerLink}>Work</a>
+              <a href="#process" className={styles.footerLink}>Process</a>
+              <a href="#difference" className={styles.footerLink}>The Shift</a>
+            </div>
+          </div>
           
         </div>
 
@@ -37,3 +52,4 @@ export default function FinalCTA({ onOpenApplication }) {
     </section>
   );
 }
+

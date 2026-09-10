@@ -37,7 +37,7 @@ const ArrowLeft = () => (
 
 export default function Comparison() {
   return (
-    <section className={styles.compSection}>
+    <section className={styles.compSection} id="comparison">
       <div className="container">
         
         <header className={styles.header}>

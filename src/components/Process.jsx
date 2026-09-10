@@ -11,7 +11,7 @@ export default function Process() {
   ];
 
   return (
-    <section className={styles.processSection}>
+    <section className={styles.processSection} id="process">
       <div className="container">
         
         <header className={styles.header}>
