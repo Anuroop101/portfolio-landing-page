@@ -191,7 +191,7 @@
     <section class="section-padding container" id="process">
       <p class="eyebrow" style="text-align: center; margin-bottom: var(--space-xs);">● How we work</p>
       <h2 class="subheading" style="text-align: center; margin-bottom: var(--space-3xl);">Our Process</h2>
-      <p class="mobile-intro" style="text-align: center; margin: -32px auto 32px;">From the initial concept to the final styling, we handle every detail so you don't have to.</p>
+      <p class="mobile-only">From the initial concept to the final styling, we handle every detail so you don't have to.</p>
 
       <div class="process-timeline" id="process-timeline">
         <div class="process-timeline__progress-bar">
@@ -199,7 +199,7 @@
         </div>
         
         <div class="process-step reveal">
-          <div class="process-step__number">01</div>
+          <div class="process-step__number">1</div>
           <div class="process-step__content">
             <h3 class="feature__title" style="margin-bottom: var(--space-xs);">Discover</h3>
             <p class="caption">We begin by understanding your lifestyle, goals, preferences, and the unique character of your space.</p>
@@ -208,7 +208,7 @@
         </div>
         
         <div class="process-step reveal">
-          <div class="process-step__number">02</div>
+          <div class="process-step__number">2</div>
           <div class="process-step__content">
             <h3 class="feature__title" style="margin-bottom: var(--space-xs);">Design</h3>
             <p class="caption">Moodboards, layouts, material selections, and carefully crafted concepts define the visual direction.</p>
@@ -217,7 +217,7 @@
         </div>
         
         <div class="process-step reveal">
-          <div class="process-step__number">03</div>
+          <div class="process-step__number">3</div>
           <div class="process-step__content">
             <h3 class="feature__title" style="margin-bottom: var(--space-xs);">Visualize</h3>
             <p class="caption">High-quality 3D renders and walkthroughs allow clients to experience the design before execution begins.</p>
@@ -226,7 +226,7 @@
         </div>
 
         <div class="process-step reveal">
-          <div class="process-step__number">04</div>
+          <div class="process-step__number">4</div>
           <div class="process-step__content">
             <h3 class="feature__title" style="margin-bottom: var(--space-xs);">Execute</h3>
             <p class="caption">Our team coordinates vendors, supervises quality, and manages every detail while keeping clients informed.</p>
@@ -235,7 +235,7 @@
         </div>
 
         <div class="process-step reveal">
-          <div class="process-step__number">05</div>
+          <div class="process-step__number">5</div>
           <div class="process-step__content">
             <h3 class="feature__title" style="margin-bottom: var(--space-xs);">Reveal</h3>
             <p class="caption">Final styling, finishing touches, and a walkthrough deliver a space that feels timeless and personal.</p>
@@ -553,13 +553,26 @@
           </div>
         </div>
       </div>
+      <div class="mobile-testimonial-slider" aria-label="Testimonials">
+        <div class="mobile-testimonial-slider__controls">
+          <button class="slider-btn prev" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </button>
+          <button class="slider-btn next" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+        <div class="mobile-testimonial-slider__track">
+          <!-- JS injects cards here -->
+        </div>
+      </div>
     </section>
 
     <!-- Section 09: Press & Clients -->
     <section class="container section-padding" style="border-top: 1px solid rgba(0,0,0,0.1);">
       <p class="eyebrow" style="text-align: center; margin-bottom: var(--space-lg);">● As seen in</p>
       <div class="press-logos"
-        style="display: flex; justify-content: center; gap: var(--space-2xl); flex-wrap: wrap; color: var(--text-muted); font-size: 18px; font-weight: 600;">
+        style="display: flex; justify-content: center; flex-wrap: wrap; color: var(--text-muted); font-size: 18px; font-weight: 600;">
         <span>VOGUE</span>
         <span>ELLE DECOR</span>
         <span>ARCHITECTURAL DIGEST</span>
@@ -568,8 +581,8 @@
     </section>
 
     <!-- Section 10: Scarcity Banner -->
-    <section class="section-padding"
-      style="background-color: var(--accent); color: var(--bg-main); text-align: center; margin: var(--space-xl) 0;">
+    <section class="section-padding scarcity-banner"
+      style="background-color: var(--accent); color: var(--bg-main); text-align: center;">
       <div class="container">
         <h2 class="subheading" style="margin-bottom: var(--space-xs);">Currently accepting 3 new projects for early
           2027.</h2>
@@ -606,6 +619,7 @@
           <p class="eyebrow" style="margin-bottom: var(--space-xs);">● Follow along</p>
           <h2 class="subheading">@voss.studio</h2>
         </div>
+        <!-- CLIENT: Insert real Instagram URL -->
         <a href="#" class="link-arrow">Follow on Instagram</a>
       </div>
       <div class="insta-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-sm);">
@@ -636,6 +650,7 @@
           <p class="eyebrow" style="margin-bottom: var(--space-xs);">● Insights</p>
           <h2 class="subheading">The Journal</h2>
         </div>
+        <!-- CLIENT: Insert real articles URL -->
         <a href="#" class="link-arrow">Read all articles</a>
       </div>
       <div class="journal-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md);">
@@ -678,7 +693,8 @@
         <h2 class="subheading" style="margin-bottom: var(--space-sm);">Join our inner circle</h2>
         <p style="color: var(--text-muted); margin-bottom: var(--space-lg);">Get monthly insights on design, sourcing,
           and studio news. No spam.</p>
-        <form id="newsletter-form" class="newsletter-form" style="display: flex; gap: var(--space-xs); max-width: 400px; margin: 0 auto;">
+        <!-- CLIENT: Insert newsletter form endpoint (e.g. Mailchimp action URL) -->
+        <form id="newsletter-form" action="#" class="newsletter-form" style="display: flex; gap: var(--space-xs); max-width: 400px; margin: 0 auto;">
           <input type="email" class="form-input" placeholder="Email address"
             style="margin: 0; background: var(--bg-main);" required>
           <button type="submit" class="btn btn--primary">Subscribe</button>
@@ -826,6 +842,7 @@
             <img src="assets/images/portfolio_bedroom.png" alt="Pin" loading="lazy">
           </div>
         </div>
+        <!-- CLIENT: Insert real Pinterest URL -->
         <a href="#" class="link-arrow" style="border-color: var(--bg-main);">Follow our boards</a>
       </div>
     </section>
@@ -860,6 +877,7 @@
         <ul role="list" style="display: flex; flex-direction: column; gap: var(--space-xs); font-size: 14px;">
           <li><a href="mailto:hello@vossstudio.com">hello@vossstudio.com</a></li>
           <li><a href="tel:+447700000000">+44 7700 000000</a></li>
+          <!-- CLIENT: Insert real Instagram URL -->
           <li><a href="#">Instagram</a></li>
         </ul>
       </div>
@@ -884,29 +902,6 @@
   <script src="assets/js/slider.js"></script>
   <script src="assets/js/form.js"></script>
   <script src="assets/js/testimonials.js"></script>
-</body>
-
-</html>
-<div class="footer__bar">
-  <span>&copy; 2026 Voss Studio. All rights reserved.</span>
-  <span>BIID Member · Professional Indemnity Insured</span>
-</div>
-</footer>
-
-</footer>
-
-<a href="contact.html" class="sticky-cta">
-  Book a consultation
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <line x1="5" y1="12" x2="19" y2="12"></line>
-    <polyline points="12 5 19 12 12 19"></polyline>
-  </svg>
-</a>
-
-<script src="assets/js/main.js"></script>
-<script src="assets/js/slider.js"></script>
-<script src="assets/js/form.js"></script>
 </body>
 
 </html>
