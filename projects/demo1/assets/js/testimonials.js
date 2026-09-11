@@ -1,61 +1,67 @@
 /**
- * Compact, accessible testimonial carousel.
+ * Mobile Testimonial Slider (Crossfade)
  */
-(function () {
-  'use strict';
+document.addEventListener('DOMContentLoaded', () => {
+  const sliderContainer = document.querySelector('.mobile-testimonial-slider');
+  const track = document.querySelector('.mobile-testimonial-slider__track');
+  const prevBtn = document.querySelector('.mobile-testimonial-slider__controls .prev');
+  const nextBtn = document.querySelector('.mobile-testimonial-slider__controls .next');
 
-  const carousel = document.querySelector('.testimonial-carousel');
-  if (!carousel) return;
+  if (!sliderContainer || !track || !prevBtn || !nextBtn) return;
 
-  const slides = Array.from(carousel.querySelectorAll('.testimonial-carousel__slide'));
-  const previous = carousel.querySelector('[data-testimonial-prev]');
-  const next = carousel.querySelector('[data-testimonial-next]');
-  const current = carousel.querySelector('#testimonial-current');
-  const client = carousel.querySelector('#testimonial-client');
-  const project = carousel.querySelector('#testimonial-project');
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let activeIndex = 0;
-  let timer;
+  // 1. Gather the 6 unique cards from the desktop marquee
+  const leftCards = Array.from(document.querySelectorAll('.marquee-track--left .marquee-content:first-child .bento-card'));
+  const rightCards = Array.from(document.querySelectorAll('.marquee-track--right .marquee-content:first-child .bento-card'));
+  const allCards = [...leftCards, ...rightCards];
 
-  function setActive(index) {
-    activeIndex = (index + slides.length) % slides.length;
-    slides.forEach(function (slide, slideIndex) {
-      const isActive = slideIndex === activeIndex;
-      slide.classList.toggle('is-active', isActive);
-      slide.setAttribute('aria-hidden', String(!isActive));
-    });
+  if (allCards.length === 0) return;
 
-    const activeSlide = slides[activeIndex];
-    current.textContent = String(activeIndex + 1).padStart(2, '0');
-    client.textContent = activeSlide.dataset.client;
-    project.textContent = activeSlide.dataset.project;
-  }
-
-  function stopAutoPlay() {
-    window.clearInterval(timer);
-  }
-
-  function startAutoPlay() {
-    if (reduceMotion) return;
-    stopAutoPlay();
-    timer = window.setInterval(function () { setActive(activeIndex + 1); }, 7000);
-  }
-
-  previous.addEventListener('click', function () {
-    setActive(activeIndex - 1);
-    startAutoPlay();
+  // 2. Clone and inject them into the mobile track
+  const mobileCards = allCards.map((card) => {
+    const clone = card.cloneNode(true);
+    clone.style = ''; // clear any inline styles from desktop
+    track.appendChild(clone);
+    return clone;
   });
 
-  next.addEventListener('click', function () {
-    setActive(activeIndex + 1);
-    startAutoPlay();
+  // 3. Slider Logic - Crossfade
+  let currentIndex = 0;
+  let isAnimating = false;
+
+  function goToSlide(newIndex) {
+    if (isAnimating || newIndex === currentIndex) return;
+    isAnimating = true;
+
+    const currentCard = mobileCards[currentIndex];
+    const nextCard = mobileCards[newIndex];
+
+    // Trigger crossfade: current exits, next enters SIMULTANEOUSLY
+    currentCard.classList.remove('is-active');
+    currentCard.classList.add('is-exiting');
+    
+    nextCard.classList.remove('is-exiting');
+    nextCard.classList.add('is-active');
+    
+    currentIndex = newIndex;
+
+    // Reset exiting state after transition completes (400ms in CSS)
+    setTimeout(() => {
+      currentCard.classList.remove('is-exiting');
+      isAnimating = false;
+    }, 400); 
+  }
+
+  // Initialize
+  mobileCards[0].classList.add('is-active');
+
+  // Event Listeners
+  prevBtn.addEventListener('click', () => {
+    const newIndex = (currentIndex - 1 + mobileCards.length) % mobileCards.length;
+    goToSlide(newIndex);
   });
 
-  carousel.addEventListener('mouseenter', stopAutoPlay);
-  carousel.addEventListener('mouseleave', startAutoPlay);
-  carousel.addEventListener('focusin', stopAutoPlay);
-  carousel.addEventListener('focusout', startAutoPlay);
-
-  setActive(0);
-  startAutoPlay();
-})();
+  nextBtn.addEventListener('click', () => {
+    const newIndex = (currentIndex + 1) % mobileCards.length;
+    goToSlide(newIndex);
+  });
+});
