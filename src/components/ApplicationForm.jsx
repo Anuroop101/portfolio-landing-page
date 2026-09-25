@@ -4,8 +4,7 @@ import styles from './ApplicationForm.module.css';
 export default function ApplicationForm({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Application submitted! (This is a demo)");
-    onClose();
+    window.location.href = "https://www.instagram.com/direct/t/17844966386941227";
   };
 
   return (

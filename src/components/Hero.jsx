@@ -61,9 +61,14 @@ export default function Hero({ onOpenApplication }) {
             </div>
             
             <div className={styles.ctaGroup}>
-              <button className="btn-primary" onClick={onOpenApplication}>
-                Tell us about your project &rarr;
-              </button>
+              <a 
+                href="https://www.instagram.com/direct/t/17844966386941227" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-primary"
+              >
+                Start a project &rarr;
+              </a>
               <a href="#work" className={styles.secondaryLink}>View selected work &darr;</a>
             </div>
           </div>

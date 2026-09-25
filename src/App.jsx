@@ -14,7 +14,9 @@ import ApplicationForm from './components/ApplicationForm';
 function App() {
   const [isApplicationOpen, setIsApplicationOpen] = useState(false);
 
-  const handleOpenApplication = () => setIsApplicationOpen(true);
+  const handleOpenApplication = () => {
+    window.open("https://www.instagram.com/direct/t/17844966386941227", "_blank", "noopener,noreferrer");
+  };
   const handleCloseApplication = () => setIsApplicationOpen(false);
 
   return (

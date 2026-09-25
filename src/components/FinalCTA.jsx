@@ -25,9 +25,14 @@ export default function FinalCTA({ onOpenApplication }) {
           </div>
           
           <div className={styles.actionWrapper}>
-            <button className={`btn-primary ${styles.ctaButton}`} onClick={onOpenApplication}>
-              Tell us about your project &rarr;
-            </button>
+            <a 
+              href="https://www.instagram.com/direct/t/17844966386941227" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={`btn-primary ${styles.ctaButton}`}
+            >
+              Start a project &rarr;
+            </a>
             <p className={styles.smallNote}>Tell us a little about your studio. We'll take it from there.</p>
           </div>
           
